@@ -1,37 +1,41 @@
 # SlutProjecktProgramering1LOLLMAOMasterMind
 
 ## Description
-Programet är skrivet i python. Programet är till för att man ska kunna köra Master Mind utan brädspelet.
+The program is writen in Python. The program is made so you kan play the board game Master Mind without the physical board game.
 
-## Technology/Languages/Built with (Teknologier/Språk/Byggt med - välj en)
+## Technology/Languages/Built
 
--Python
--TKinter
+- Python
+- TKinter
 
-## Requirements/Prerequisites (Krav)
--Python 3.9.6
--TKinter library
+## Requirements/Prerequisites
+- Python 3.9.6
+- TKinter library
 
 ## Installation
 
-Detta projekt är testat på Python Python 3.9.6. För att installera Python kan du besöka (https://www.python.org/downloads/)[följande länk för senaste versionen.]
+This project is tested with Python version Python 3.9.6. To install Python visit (https://www.python.org/downloads/)
+[Follow the link for the latest version.]
 
-Klona repot
+Clone repository
 ```cmd
-    git clone https://github.com/Dripmaster69/SlutProjecktProgramering1LOLLMAOMasterMind
+git clone 
+
+https://github.com/Dripmaster69/SlutProjecktProgramering1LOLLMAOMasterMind
 ```
 ## Code conventions
 
 pep-8
 
-## Hur det fungerar
+## How it works
 
-***Använd detta utrymme för att visa användbara exempel av hur projektet kan användas. Skärmdumpar, kodexempel och demos passar in här. Du kan också länka till fler resurser, exempelvis en dokumentation.***
+Playing Master Mind means that the computer generates a list of colors that are not displayed to the user and then the user must guess which colors are in the list and also guess which place in the list the color is on. You guess in rounds so first you guess all the colors in the list and the results you can get back are red which means that the color is not in the list, yellow if the color is in the list but in the wrong place and green if the color is in the list and is on right place. When all results show green, it means that all colors have been placed in the correct order and the player who guessed his list first and within 9 rounds or if you play alone, guess the right order within 9 rounds you win the game.
 
-Master Mind går ut på att datorn genererar en lista av färjer som är ej uppvisad för användaren och sedan ska användaren gissa vilka färger som är i listan och även gissa vilken plats färgen ligger på. Man gissar i omgångar så först gissar man alla färger och resultaten man kan få tillbaka är röd vilekt inebär att färgen inte finns med i listan, gul om färgen finns med i lsitan men på fel plats och grön om färgen finns med i listan och är på rätt plats. När alla resultat visar grönt betyder det att alla färger har plaserats i rätt ordning och spelaren som gissade sin lista först eller inom 9 runder vinner spelet.
+Komplicated code in the program:
 
-Komplicerad kod i programet:
+The code make sure that the checking of the guesses sends out the right hint for the spot in the list it is currently checking (This code was added because in the event that the same color repeted it self the checking metod would change a already correctly given hint into the wrong one because the code checked each answer from the begining before).
 
+```python
 for x in range(lenght):
     if attempt == sequence[x].value:
         if x < counter:
@@ -39,9 +43,11 @@ for x in range(lenght):
                 return "🟡"
         if x > counter:
             return "🟡"
+```
 
-Koden ser till så att rättningen av gissningarna skickar ut rätt hint för den platsen i sekvänsen koden kollar.
+The code creats a window with a grid of a bunch of small windows. The grid is 5 by 3 and this is used because windows can take alot more commands then a the .grid command. This healps with spaceing and structure of the window.
 
+```python
 window = tk.Tk()
 
 for y in range(5):
@@ -50,75 +56,103 @@ for y in range(5):
     for x in range(3):
         frame1 = tk.Frame(master=window, relief=tk.RAISED, borderwidth=5)
         frame1.grid(row=y, column=x, padx=5, pady=5)
+```
 
-Koden skapar ett fönster med ett rutnät av små fönster med 5 columner och 3 rader. I varje litet fönster kan man sedan välja att lägga till vad somhelst.
+## Example
 
-Screenshoots:
-Koden utan TKinter:
-![Skärmklipp2](https://user-images.githubusercontent.com/95741620/168275405-9742bf24-7cd8-43e2-872c-419c7de3c714.PNG)
+Code with TKinter:
+![Skärmklipp2](https://user-images.githubusercontent.com/95741620/168275614-cdc9581e-f014-4a19-8d14-7a8c14216f79.PNG)
 
-Koden med TKinter:
-![Skärmklipp](https://user-images.githubusercontent.com/95741620/168275354-eaa0ea9b-a18e-41ea-bf2f-1b573a3f8208.PNG)
+Code with TKinter:
+![Skärmklipp](https://user-images.githubusercontent.com/95741620/168275569-24abcd9c-5dac-4c9d-9cfd-f186069d01df.PNG)
 
-## Example (exempelkörning)
+## To do/Roadmap
 
-***Visa gärna, genom ett kodblock från din konsol, eller en bild, hur en exempelkörning kan gå till.***
-
-## To do/Roadmap (Att göra/Plan)
-
-***Det kan vara nyttigt att få andra som läser om projektet att få veta vad du saknar just nu i programmet. Gör detta gärna genom en lista där färdiga saker strukits över.***
-Exempel:
-
-- [x] Påbörja exempelreadme
-- [ ] Hitta fler exempelrubriker
-- [ ] Kom på bättre exempel
-- [ ] Ge exempel på projekt med fullständig readme
-- [ ] Ytterligare språk
-    - [x] Svenska
-    - [ ] Engelska
+- [ ] Code the functions of the buttons
+- [ ] Connect the TKinter code with the game code
+- [ ] Give the TKinter window a background
+- [ ] Add language
+    - [x] Swedish
+    - [ ] English
+- [ ] Code a AI
+- [ ] Code gamemode 3 (You vs computer/AI)
+- [ ] Set up a wedsite/platform for the game
 
 ## Changelog
 
-***Det kan vara rimligt att inkludera vad som har förändrats genom de olika iterationerna som ditt projekt gått igenom. Detta kan antingen göras i din README eller så kan du inkludera en CHANGELOG.md.***
-
-***I changelogen ska varje rubrik vara en version. Under varje version bör du inkludera vad du lagt till eller ändrat på (added or changed) under en rubrik samt vad du tagit bort (removed) under en annan. Exempel: ***
-
 ### Version 1.0.1
 
-#### Tillagt eller ändrat
+#### Added or changed
 
-- La till avsnitt om changelog
-- La till avsnitt om kodkonventioner
+- Added the class Contains and Game
+- Added Alpha version of the Main funktion
 
-#### Borttaget
+### Version 1.0.2
 
-- Tog bort tidigare rubriker som inte såg bra ut.
-- Tog bort felaktig rubrik om innehållsförteckning
+#### Added or changed
 
-## Att bidra (Contribution)
+ - Added Beta version of the Main funktion
+ - Added more methods for the Game class
 
-***Inom programmeringsvärlden är det ofta populärt att man vill utveckla andras projekt och bidra till förbättring. För att underlätta detta är det bra om det i READMEn förklaras om det är tillåtet, och om det är det hur en går till väga för att kunna göra det. Detta avsnitt skulle se ut som följande:*** 
+### Version 1.0.3
 
-Då bedömning ännu ej är gjord på uppgiften så tillåts inga pull requests. Så fort bedömning är gjord kommer detta tillåtas.  
+#### Added or changed
 
-Vid större förändringar önskar jag att en issue öppnas för diskussion om vad som ska förändras.
+ - Added a new class called Player
+ - Added a general gamemode 1 method for the class Game
+ - Added a gamemode 2 method for the class Game
 
-## Licens (License)
+#### Removed
+
+- Removed old/nongeneral version of gamemode 1 method in the class Game
+
+### Version 1.0.4
+
+#### Added or changed
+
+ - Added bug fixing code
+
+#### Removed
+
+ - Removed nonfunktioning and nonoptimised code.
+
+### Version 1.0.5
+
+#### Added or changed
+
+ - Added Alpha version of Tkinter code
+
+### Version 1.0.6
+
+#### Added or changed
+
+ - Changed the TKinter code strukture to fit/fit better with TKinters syntax
+
+### Version 1.0.6
+
+#### Added or changed
+
+ - Added Doc Strings
+
+## Contribution
+
+As an assessment has not yet been made of the task, no pull requests are allowed. As soon as an assessment has been made, this will be allowed.
+
+In the event of major changes, I want an issue to be opened up for discussion about what should be changed.
+
+## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-## Contact (Kontakt)
+## Contact
 
 ***Skriv här hur du blir kontaktad ifall det finns frågor om projektet***
 
-Ditt Namn - @din_twitter (eller discord? annan plattform?) - email@example.com
+Maximilian Waldenfeldt Uggla - Twitter: @Mutheruggla - Discord: Puggla#0380 - maxi.uggla@gmail.com
 
-Projektlänk: https://github.com/ditt_anv/reponamn
+Project link: https://github.com/Dripmaster69/SlutProjecktProgramering1LOLLMAOMasterMind
 
-## Erkännanden (Acknowledgments)
+## Acknowledgments
 
-***Här kan du lista resurser eller personer som har hjälpt dig med projektet. Det kan vara länkar till tutorials eller dokumentation, eller bara någon annans profil som du vill uppmärksamma. Har du inget som behöver tas här så kan du strunta i rubriken. ***
-
-- Mamma och Pappa
-- [En jättebra låt](https://www.youtube.com/watch?v=cvh0nX08nRw)
-- Dan Hermansson
+- "Niclas Lund"
+- [TKinter tutorial](https://realpython.com/python-gui-tkinter/#building-your-first-python-gui-application-with-tkinter)
