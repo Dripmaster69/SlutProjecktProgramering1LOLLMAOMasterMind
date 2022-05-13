@@ -55,10 +55,10 @@ Koden skapar ett fönster med ett rutnät av små fönster med 5 columner och 3 
 
 Screenshoots:
 Koden utan TKinter:
-
+![Skärmklipp2](https://user-images.githubusercontent.com/95741620/168275405-9742bf24-7cd8-43e2-872c-419c7de3c714.PNG)
 
 Koden med TKinter:
-![image](https://user-images.githubusercontent.com/95741620/167794962-2ab2a7fd-c16f-406f-96c8-c276424e852c.png)
+![Skärmklipp](https://user-images.githubusercontent.com/95741620/168275354-eaa0ea9b-a18e-41ea-bf2f-1b573a3f8208.PNG)
 
 ## Example (exempelkörning)
 
