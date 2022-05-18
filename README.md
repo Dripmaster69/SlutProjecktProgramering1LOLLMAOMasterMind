@@ -65,6 +65,7 @@ Code without TKinter:
 ![Skärmklipp2](https://user-images.githubusercontent.com/95741620/168275614-cdc9581e-f014-4a19-8d14-7a8c14216f79.PNG)
 
 Code with TKinter:
+
 ![Skärmklipp](https://user-images.githubusercontent.com/95741620/168275569-24abcd9c-5dac-4c9d-9cfd-f186069d01df.PNG)
 
 ## To do/Roadmap
@@ -153,5 +154,5 @@ Project link: https://github.com/Dripmaster69/SlutProjecktProgramering1LOLLMAOMa
 
 ## Acknowledgments
 
-- "Niclas Lund"
+- Niclas Lund
 - [TKinter tutorial](https://realpython.com/python-gui-tkinter/#building-your-first-python-gui-application-with-tkinter)
