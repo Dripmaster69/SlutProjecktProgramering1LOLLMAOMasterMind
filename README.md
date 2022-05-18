@@ -31,7 +31,7 @@ pep-8
 
 Playing Master Mind means that the computer generates a list of colors that are not displayed to the user and then the user must guess which colors are in the list and also guess which place in the list the color is on. You guess in rounds so first you guess all the colors in the list and the results you can get back are red which means that the color is not in the list, yellow if the color is in the list but in the wrong place and green if the color is in the list and is on right place. When all results show green, it means that all colors have been placed in the correct order and the player who guessed his list first and within 9 rounds or if you play alone, guess the right order within 9 rounds you win the game.
 
-Komplicated code in the program:
+Complicated code in the program:
 
 The code make sure that the checking of the guesses sends out the right hint for the spot in the list it is currently checking (This code was added because in the event that the same color repeted it self the checking metod would change a already correctly given hint into the wrong one because the code checked each answer from the begining before).
 
@@ -145,8 +145,6 @@ In the event of major changes, I want an issue to be opened up for discussion ab
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ## Contact
-
-***Skriv här hur du blir kontaktad ifall det finns frågor om projektet***
 
 Maximilian Waldenfeldt Uggla - Twitter: @Mutheruggla - Discord: Puggla#0380 - maxi.uggla@gmail.com
 
