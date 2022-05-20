@@ -130,7 +130,7 @@ Code with TKinter:
 
  - Changed the TKinter code strukture to fit/fit better with TKinters syntax
 
-### Version 1.0.6
+### Version 1.0.7
 
 #### Added or changed
 
