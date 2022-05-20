@@ -74,8 +74,8 @@ Code with TKinter:
 - [ ] Connect the TKinter code with the game code
 - [ ] Give the TKinter window a background
 - [ ] Add language
-    - [x] Swedish
-    - [ ] English
+    - [ ] Swedish
+    - [x] English
 - [ ] Code a AI
 - [ ] Code gamemode 3 (You vs computer/AI)
 - [ ] Set up a wedsite/platform for the game
