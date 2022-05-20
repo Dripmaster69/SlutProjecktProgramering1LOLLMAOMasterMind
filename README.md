@@ -3,12 +3,12 @@
 ## Description
 The program is writen in Python. The program is made so you kan play the board game Master Mind without the physical board game.
 
-## Technology/Languages/Built
+## Technology
 
 - Python
 - TKinter
 
-## Requirements/Prerequisites
+## Requirements
 - Python 3.9.6
 - TKinter library
 
@@ -68,7 +68,7 @@ Code with TKinter:
 
 ![Skärmklipp](https://user-images.githubusercontent.com/95741620/168275569-24abcd9c-5dac-4c9d-9cfd-f186069d01df.PNG)
 
-## To do/Roadmap
+## To do
 
 - [ ] Code the functions of the buttons
 - [ ] Connect the TKinter code with the game code
